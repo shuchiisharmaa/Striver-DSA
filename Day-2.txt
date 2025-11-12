@@ -1,0 +1,12 @@
+So Day-2 was the leftover part of day-1 video
+45 minutes
+
+Basics of c++ that i covered today are:
+1. Arrays and Strings
+2. For Loops
+3. While Loops
+4. Basic concept of functions 
+
+and details like pass by value and pass by reference
+
+Simplified learning and easy understanding.
