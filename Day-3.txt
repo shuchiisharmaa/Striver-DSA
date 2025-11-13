@@ -1,0 +1,18 @@
+Day-2 of Striver's DSA sheet
+
+Topic was time and space complexity.
+
+Time complexity: 
+Rate at which time taken for program to execute increases with respect to the size of input.
+Things to remember:
+- Calculate Worst case scenario (BIG O)
+- Avoid constants
+- Avoid all lower values
+
+Big O - Worst case 
+Thetha - Average case
+Omega - Best case
+
+Space complexity:
+Space to solve the problem and space to store the problem 
+Calculated as Big O notations
