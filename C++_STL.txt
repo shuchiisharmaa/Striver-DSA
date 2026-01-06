@@ -1,0 +1,53 @@
+4 things 
+- Algorithms
+- container
+- iterators
+-
+
+
+things i learnt
+1. Pairs {}
+- lies in urility library
+syntax {first,second}
+can be used nested
+
+2.VECTORS
+-dynamic array type
+syntax: 
+vector_name<datatype> v
+v.push_back(size); #adds space into vector
+vector<pair<int,int>> v;
+
+3. iterators
+"auto" - automatically assigns datatype
+"using for loop with auto"
+erase - removes address 
+- can be used for all as well as specified ones
+- (st, next to removed ele)
+
+iterators - begin,end,rend,rbegin
+end- points to next of last element
+rend- reverse the string and position right after begin
+rbegin- points to last element but works in reverse order
+
+back - last element position
+
+LIST- container
+similar functions
+- push_back
+- emplace_back
+- push_front
+
+
+Deque - similar to listing and VECTORS
+
+STACK
+follows LIFO
+no indesxing
+only 3 functions
+- push
+-pop
+- size
+
+QUEUE
+follows FIFO 
