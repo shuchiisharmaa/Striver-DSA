@@ -1,0 +1,8 @@
+int reverse (int n){
+    while(n>0){
+        new=n%10
+        number=(number*10)+new
+        n/=10
+    }
+    return number
+}
