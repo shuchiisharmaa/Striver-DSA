@@ -1,0 +1,17 @@
+simple function
+check number == rev number
+
+int palindrome(int x){
+    int y = x
+    while(x>0){
+        digit=x%10;
+        number=(number*10)+digit;
+        x/=10;
+    }
+
+    if (number==y){
+        return true;
+    }
+    else
+        return false;
+}
