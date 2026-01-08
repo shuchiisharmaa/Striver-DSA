@@ -1,0 +1,14 @@
+Armstrong number 
+371 = 9+49+1 (sum of square of digits)
+
+int armstrong(int x){
+    int y;
+    int arm_num=0;
+    y=x;
+    while(x>0){
+        int digit=x%10;
+        arm_num+=(digit*digit)// ((digit)**2) // pow(digit,2);
+        x/=10;
+    }
+    return arm_num
+}
