@@ -1,0 +1,23 @@
+GCD-
+Greatest 
+Common 
+Divisor
+
+HCF-
+Highest
+Common 
+Factor
+
+int GCD_function(int x, int y){
+    int GCD=1;
+
+    for(i=1;i<max(x,y);i++){
+        if(x%i==0 && y%i==0){
+            GCD=i;
+        }
+    }
+    return GCD;
+}
+
+
+
