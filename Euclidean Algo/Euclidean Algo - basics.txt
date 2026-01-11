@@ -1,0 +1,3 @@
+for numbers N1, N2
+
+GCD(N1,N2) = GCD(N1-N2, N2)
