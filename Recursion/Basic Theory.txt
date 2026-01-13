@@ -1,0 +1,42 @@
+Tough topics... Need practise
+
+Recursion:
+Function calls itself until a specific condition
+
+eg:
+
+void f(){   <----
+    print();    |
+    f();        |
+}               |
+                |
+main(){         |
+    f();---------
+}
+
+
+with base condition
+cont = 0
+f(){
+    if (cont == 4){
+        return;
+    }
+    print(cont);   <------ wont be executed once cont >= 4
+    cont++;
+    f();
+}
+
+main(){
+    f();
+}
+
+
+
+
+recursion tree:
+
+                    f() ---| (root)
+                           |
+                f()   <----| (recursion 1)
+                           |
+            f()       <----| (recursion 2)
