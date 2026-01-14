@@ -1,0 +1,14 @@
+# include <stdio.h>
+
+    void print(int i, int n){
+        if(i==n+1){
+            return;
+        }
+        printf("Number is : %d\n",i);
+        i++;
+        print(i,n);
+    }
+
+    int main(){
+        print(1,10);
+    }
