@@ -1,0 +1,14 @@
+
+Parameterized function
+
+void f(int i, int sum){
+    if(i<1){
+        print(sum);
+        return;
+    }
+    f(i-1,sum+i);
+}
+
+int main(){
+    f(n,0)
+}

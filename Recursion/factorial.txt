@@ -1,0 +1,13 @@
+factorial function
+
+f(int i, int fact){
+    if(i<1){
+        print(fact);
+        return;
+    }
+    f(i-1,fact*i);
+}
+
+int main(){
+    f(n,1);
+}
