@@ -1,0 +1,11 @@
+f(l,r){
+    if (l>=r){
+        return;
+    }
+    swap(a[l],a[r]);
+    f(l+1,r-1);
+}
+
+main(){
+    f(0,n-1);
+}

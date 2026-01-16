@@ -1,0 +1,10 @@
+f(i){
+    if (s[i]!=s[n-i-1]){
+        return false;
+    }
+    return f(i+1);
+}
+
+main(){
+    print(f(0));
+}
