@@ -1,0 +1,12 @@
+its easy if you know backstory
+
+fib(int n){
+    if(n<=1){
+        return n;
+    }
+    return fib(n-1) + fib(n-2);
+}
+
+
+that's all...
+need to remember this tho
