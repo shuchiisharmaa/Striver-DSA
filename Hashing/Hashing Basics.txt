@@ -1,0 +1,23 @@
+brute force technique
+
+int f( number, array){
+    count=0;
+    for (int i=0;i<n;i++){
+        if(a[i]== number){
+            count++;
+        }
+    }
+    return count;
+}
+
+hash method
+
+int hash[12]={0} // initialization of hash map
+hashing method{
+    for(int i=0;i<n;i++){
+        if(number==a[i]){
+            hash[s[i]]++;
+        }
+    }
+
+}

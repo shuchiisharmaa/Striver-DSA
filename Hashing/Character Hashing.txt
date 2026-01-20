@@ -1,0 +1,13 @@
+int hash[25]={0}{
+    for (int i = 0;i<n;i++){
+        // USE ASCII
+
+    for (int i=0;i<n;i++){
+        hash[arr[i] - 'a']++;
+    }
+// ASCII values saved for all
+makes it easier
+
+take 256 for upper and lower case :)
+    }
+}
