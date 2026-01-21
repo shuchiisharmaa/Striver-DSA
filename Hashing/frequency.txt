@@ -1,0 +1,4 @@
+this is freq checking 
+same as above just added to return highest...
+2 loop concept
+
