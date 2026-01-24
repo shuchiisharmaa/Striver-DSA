@@ -1,0 +1,33 @@
+Select Minimum/Maximum and swap 
+
+_________________
+|13|46|24|52|20|9|
+__________________
+
+step -1 
+9 46 24 52 20 13
+
+step -2
+9 13 24 52 20 46
+
+step -3
+9 13 20 52 24 46
+
+step -4
+9 13 20 24 52 46
+
+step -5
+9 13 20 24 46 52 <--- All swapped at (n-1) level
+
+
+
+Implementation
+ for (i =0;i<=n-2;i++){
+    min = i;
+    for (j=i;j<=n-1;j++){
+        if(arr[j]<min){
+            swap arr[min] & arr[i] (prefer use temp)
+        }
+
+    }
+ }
