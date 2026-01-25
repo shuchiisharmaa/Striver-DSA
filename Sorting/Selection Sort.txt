@@ -20,7 +20,6 @@ step -5
 9 13 20 24 46 52 <--- All swapped at (n-1) level
 
 
-
 Implementation
  for (i =0;i<=n-2;i++){
     min = i;
