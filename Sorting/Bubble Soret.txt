@@ -12,6 +12,12 @@ for(i=n-1;i>=1;i--)
 
 
 
+time complexity
+O(n^2)
+
+
+other way
+
 
 
 
