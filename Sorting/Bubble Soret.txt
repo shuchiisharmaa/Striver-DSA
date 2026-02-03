@@ -1,0 +1,17 @@
+we went from 0 - (n-1)
+and for subsequent ones we went from 0 - (n-i-1)
+
+for(i=n-1;i>=1;i--)
+{
+    for (j=0;j<=i-1;j++){
+        if(a[j]>a[j++]){ <----- run time error possible if we take till i... so take till i-1
+            swap;
+        }
+    }
+}
+
+
+
+
+
+
