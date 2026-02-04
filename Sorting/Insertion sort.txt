@@ -1,0 +1,14 @@
+insertion sort
+
+for(i=;i<n-1;i++){
+    for(j=i;j<0;j--){
+        if (a[j]<a[j--]){
+            swap;
+        }
+    }
+}
+
+
+
+
+worst case O(n)
