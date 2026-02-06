@@ -1,0 +1,29 @@
+Merge sort
+
+Time complexity is better than all other sorting algos
+-> Divide and Merge
+
+1. Divides the array into 2 parts
+2. left part is again divided into 2 parts
+3. it is divided until each element is INDIVIDUAL
+4. sort the numbers and merge 
+5. repeat merge up until we reach root array
+
+USES RECURSION
+
+pseudo code
+
+low-> arr[0]
+high -> arr[n]
+
+mergesort(arr,low, high){
+    
+    if(low>=high) return;
+    mid=(low+high)/2;
+
+    mergesort(arr,low,mid);
+    mergesort(arr,mid+1,high);
+
+    merge(arr,low,mid,high);
+
+}
