@@ -27,3 +27,32 @@ mergesort(arr,low, high){
     merge(arr,low,mid,high);
 
 }
+
+merge (arr,low,mid,mid+1,high){
+    temp={}
+
+    left_ptr=low;
+    right_ptr=mid+1;
+
+    while(left<=mid && right<=high){
+        if( arr[left_ptr]<=arr[right_ptr]){
+            temp.add(arr[left_ptr])
+            left++;
+        }
+        else{
+            temp.add[right_ptr];
+            right_ptr++;
+    
+        }
+    }
+    while(left<=high){
+        temp.add(arr[left_ptr]);
+        left_ptr++;
+    }
+     while(low<=right){
+        temp.add(arr[right_ptr]);
+        right_ptr++;
+    }
+
+    return temp;
+}
