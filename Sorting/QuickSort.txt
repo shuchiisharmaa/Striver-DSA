@@ -1,0 +1,42 @@
+TC - O(log N)
+SC - O(1)
+
+
+Uses Pivot function
+
+1. choose pivot, sort the numbers wtr pivot
+2. you will get 2 sub arrays
+3. repeat step one on both the sub arrays
+
+
+qs (arr, low, high){
+    if (low<high){
+        part_index = f(arr, low, high);
+        qs(arr, low, part_index-1);
+        qs(arr,part_index+1, high);
+    }
+}
+
+
+
+int f(arr, low, high){
+    pivot = arr[low];
+    i=low;
+    j=high;
+
+
+    while (i<j){
+        while(arr[i]<=arr[pivot] && i<=high){
+            i++;
+        }
+        while(arr[j]>=arr[pivot] && j>=low){
+            j--;
+        }
+
+        if (i<j){
+            swap (arr[i], arr[j]);
+        }
+
+        return j;
+    }
+}
