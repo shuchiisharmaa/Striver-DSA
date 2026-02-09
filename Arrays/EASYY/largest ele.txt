@@ -1,0 +1,22 @@
+1st method - Sorting and taking last elements
+
+(brute force)
+TC-  O(N log n)
+1. Sort
+2. pick last elements
+
+2nd method - MAX , choose max ele and iterate
+1. take max as 1st ele
+2. if next is larger replace max
+3. return max
+
+
+largest(arr,n){
+    max=arr[0]
+    while(i=1;i<n;i++){
+        if(arr[i]>max){
+            max=arr[i];
+        } <-- index of largest ele = i+1th elements
+    }
+    return max;
+}
