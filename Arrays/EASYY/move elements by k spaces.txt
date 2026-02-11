@@ -1,0 +1,29 @@
+by K places
+
+IMP
+use d=d%n (for left shift)
+
+use 
+d=d%n
+d=n-d (for right shift)
+
+saves you from a lot of issues
+
+
+temp[]=[first d elements]
+
+for(i=d;i<n;i++){
+    arr[i-d]=arr[i];
+
+}
+// one way usinh j as extra variable
+j=0;
+for(i=n-d;i<n;i++){
+    arr[i]=temp[j];
+    j++;
+}
+
+// without j 
+for (i=n-d;i<n;i++){
+    arr[i]=temp[i-(n-d)];
+}
