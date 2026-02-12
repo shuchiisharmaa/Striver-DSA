@@ -1,0 +1,51 @@
+move all zeros to end of list
+
+brute force -> better -> optimal
+
+brute force
+
+temp =[]
+for (i = 0;i<n;i++){
+   if(arr[i]!=0){
+    temp[i]=arr[i];
+   }
+
+}
+
+for(i=0;i<temp.size;i++){
+    arr[i]=temp[i];
+}
+
+for(i = temp.size+1; i<n;i++){
+    arr[i]=0;
+}
+
+TC- O(2N)
+SC- O(N)
+---------------------------------------------------------------------
+optimal solution
+
+
+j=-1;
+for(i=0;i<n;i++){
+    if(arr[i]==0){
+        j=i;
+        break;
+    }
+}
+
+for(i=j+1;i<n;i++){
+    if(arr[i]!=0){
+        swap(arr[i],arr[j]);
+        j++;
+    }
+}
+
+
+
+TC- O(N)
+SC- O(1)
+
+
+
+------------------------------------------------------------
