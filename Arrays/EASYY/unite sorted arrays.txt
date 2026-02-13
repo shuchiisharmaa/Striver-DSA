@@ -1,0 +1,27 @@
+for(i =0;i<n;i++){
+    for(j=0;j<m;j++){
+        if(union[k-1]==arr2[j] || union[k-1]==arr1[i]){
+            i++;
+           or for  j++;
+        }
+        if(arr1[i]<arr2[j]){
+            union.appen[arr1[i]];
+        }
+        else{
+            union.append[arr2[j]];
+        }
+    }
+}
+
+
+
+=======================================================================
+intersection of sorted arrays
+
+for(i=0;i<n;i++){
+    for(j=i;j<m;j++){
+        if(arr1[i]==arr2[j]){
+            intersect.append(arr1[i]);
+                }
+    }
+}
