@@ -1,0 +1,70 @@
+brute approach
+
+for(i=0;i<n;i++){
+    num=arr[i];
+
+    for(j=0;j<n;j++){
+        if (arr[i]== num){
+            counter++;
+        }
+    }
+    if (int ==1) return;
+}
+
+
+==========================================================
+better
+
+hash function
+
+
+for (i=0;i<n;i++){
+    max=maxi(maxi,arr[i]);
+}
+
+for (i=0;i<n;i++){
+    hash(arr[i]++);
+}
+
+
+for (i=0;i<n;i++){
+    if(hash[arr[i]]==1){
+        return arr[i];
+    }
+}
+
+
+
+TC- O(N)
+SC - O(max)
+
+*Hash is not always good... for high numbers.
+
+======================================================================
+
+optimal solution
+
+Map<long long, int>
+
+
+for (i=0->n){
+    map[arr[i]]++;
+
+}
+for (auto it:map){
+    if(it.second==1){
+        return it;
+    }
+}
+---------------------------------------------------------------------------
+MOST 
+XOR= 0
+for (i=0->n){
+    XOR = XOR ^ arr[i];
+}
+return XOR;
+
+
+TC- O(N/2 + 1)
+SC- O(n/2 +1)
+=========================================================================
