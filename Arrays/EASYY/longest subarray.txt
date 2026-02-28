@@ -1,0 +1,65 @@
+generate all subarrays and choose largest subarrays
+
+subarray - contiguous part of array that satisfies a given condition
+
+
+brute
+Generate all the subarrays and choose longest
+
+how to generate?
+for (i=0;i<n;i++){
+    for (j=i;j<n;j++){
+        for (k=i;k<j;k++){
+            sum+=a[k]
+        }
+        if (sum==k) len = max(len,j-i+1)
+    }
+}
+print len;
+
+
+TC - O(N^3)
+SC- O(N)
+
+
+---------------------------------------------------------
+better -1.0
+
+for (i=0;i<n;i++){
+    for (j=i;j<n;j++){
+        
+            sum+=a[j]
+        
+        if (sum==k) len = max(len,j-i+1)
+    }
+}
+print len;
+
+TC - O(N^2)
+
+---------------------------------------------------------
+better -2.0
+Use Hashing
+
+if subarray with sum k as [ith] at last element
+
+map<long,long,int>presummap:
+int maxlen = 0;
+for (int i=0;i<a.size();i++){
+    sum+=a[i];
+}
+
+int rem = sum-k;
+if(presummap.find(rem) != presummap.len())
+
+
+
+-----------------------------------------------------------
+best
+
+2 pointer solution
+
+go right check left
+
+
+
