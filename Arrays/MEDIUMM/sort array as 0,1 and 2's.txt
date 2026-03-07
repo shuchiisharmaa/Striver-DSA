@@ -1,0 +1,23 @@
+brute 
+- use a sorting algo 
+-----------------------------------------------------------
+better
+- count the number of occurances of each elemeent
+- manually loop array for the elements
+-----------------------------------------------------------
+best
+dutch algo
+- [0...low-1] ->0
+- [low...mid-1]->1
+- [ mid+1...n-1]->2
+
+a[mid]==0
+swap (a[mid], a[low])
+low++
+
+a[mid]==1
+mid ++
+
+a[mid]==2
+swap (a[high],a[mid])
+high--
